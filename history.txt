@@ -1,0 +1,1000 @@
+    2  docker --version
+    3  cd /home/vmishra/Downloads/
+    4  ngrok 172.16.9.61
+    5  ls
+    6  ./ngrok 172.16.9.61
+    7  history | grep ngrok
+    8  ./ngrok http 80 
+    9  ip a
+   10  cd containers/
+   11  ls
+   12  rm -rvf *
+   13  ls
+   14  cd
+   15  cd container
+   16  ls
+   17  rm -rvf *
+   18  ls
+   19  cd
+   20  docker ps
+   21  docker logs 7a4ffa49d50c
+   22  docker exec -it 7a4ffa49d50c bash
+   23  ip a
+   24  docker ps
+   25  watch docker ps
+   26  mysql -u root -p
+   27  cd containers/
+   28  ls
+   29  cd 46136/
+   30  ls
+   31  cd cpp
+   32  ls
+   33  docker images
+   34  docker ps
+   35  docker run -p 33666:3000 docker.io/krishnasrinivas/wetty
+   36  docker images
+   37  docker rmi e708fa0a8f05
+   38  docker rmi -f e708fa0a8f05
+   39  docker images
+   40  docker rmi -f 7beb1222cdf2
+   41  docker images
+   42  docker rmi -f 
+   43  docker images]
+   44  docker images
+   45  ls
+   46  pwd
+   47  ls
+   48  cat Dockerfile
+   49  mkdir guiDocker
+   50  cd guiDocker
+   51  vi Dockerfile
+   52  sudo docker build -t gui-app .
+   53  sudo docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/guiDocker/.Xauthority:rw" gui-app
+   54  exit
+   55  cd guiDocker/
+   56  ls
+   57  sudo docker run -itd --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" gui-app
+   58  free -m
+   59  free -Hm
+   60  free -hm
+   61  cd guiDocker/
+   62  ls
+   63  sudo docker build -t android-studio .
+   64  cat Dockerfile 
+   65  ls
+   66  cd
+   67  mv guiDocker eyes
+   68  ls
+   69  mkdir androidDocker
+   70  cd androidDocker/
+   71  ls
+   72  vi Dockerfile
+   73  sudo docker build -t android-studio .
+   74  sudo docker run -itd --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/androidDocker/.Xauthority:rw" android-studio
+   75  docker ps
+   76  cd
+   77  ls
+   78  cd androidDocker/
+   79  ls
+   80  cat Dockerfile 
+   81  docker ps
+   82  sudo docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/androidDocker/.Xauthority:rw" android-studio
+   83  sudo docker run -it --net=host --env="DISPLAY" -v /tmp/.X11-unix:/tmp/.X11-unix -v="$HOME/.Xauthority:/root/.Xauthority:rw" purik/android-studio:latest /opt/android-studio/bin/studio.sh
+   84  docker ps
+   85  sudo docker run -it --net=host --env="DISPLAY" -v /tmp/.X11-unix:/tmp/.X11-unix -v="$HOME/.Xauthority:/root/.Xauthority:rw" purik/android-studio:latest /opt/android-studio/bin/studio.sh
+   86  docker ps
+   87  sudo docker run -it --net=host --env="DISPLAY" -v /tmp/.X11-unix:/tmp/.X11-unix -v="$HOME/.Xauthority:/root/.Xauthority:rw" purik/android-studio:latest /opt/android-studio/bin/studio.sh > output.log 2>&1 &
+   88  docker ps
+   89  sudo docker run -p 44444-it --net=host --env="DISPLAY" -v /tmp/.X11-unix:/tmp/.X11-unix -v="$HOME/.Xauthority:/root/.Xauthority:rw" purik/android-studio:latest /opt/android-studio/bin/studio.sh > output.log
+   90  docker ps
+   91  docker images
+   92  docker run -it cpp-container
+   93  docker run -itd cpp-container
+   94  docker ps
+   95  docker images
+   96  docker desc docker.io/android-studio
+   97  docker inspect docker.io/android-studio
+   98  docker ps
+   99  docker inspect modest_rosalind 
+  100  cd
+  101  jobs 
+  102  kill %1
+  103  kill %2
+  104  jobs 
+  105  docker ps
+  106  docker stop c3a3bcd30669
+  107  docker images
+  108  docker rmi -f c809a1cd81cf
+  109  docker images
+  110  docker rmi 54d263b5d76a
+  111  docker images
+  112  ls
+  113  cd
+  114  ls
+  115  rm -rvf eyes
+  116  ls
+  117  docker ps
+  118  cd androidDocker/
+  119  ls
+  120  vim Dockerfile 
+  121  sudo docker build -t android-studio .
+  122  sudo docker run -p 77777 --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/androidDocker/.Xauthority:rw" android-studio
+  123  sudo docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/androidDocker/.Xauthority:rw" android-studio
+  124  sudo docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/androidDocker/.Xauthority:rw" 
+  125  docker ps
+  126  docker images
+  127  history | grep cpp-containers
+  128  history | grep cpp-container
+  129  docker images
+  130  cd
+  131  docker pull purik/android-studio:latest
+  132  docker run -it --net=host --env="DISPLAY" -v /tmp/.X11-unix:/tmp/.X11-unix -v="$HOME/.Xauthority:/root/.Xauthority:rw" purik/android-studio:latest /opt/android-studio/bin/studio.sh
+  133  docker ps
+  134  ls
+  135  docker ps
+  136  docker run -it --net=host --env="DISPLAY" -v /tmp/.X11-unix:/tmp/.X11-unix -v="$HOME/.Xauthority:/root/.Xauthority:rw" purik/android-studio:latest /opt/android-studio/bin/studio.sh
+  137  docker ps
+  138  sudo docker run -it cpp-containers
+  139  docker images
+  140  sudo docker run -it cpp-container
+  141  docker ps
+  142  sudo docker run -itd cpp-container
+  143  docker stop 0311520d072dad2c5e4c49c58b13be3d45504329988c442a4f4d58180fc8b01c
+  144  docker ps
+  145  docker stop 472eceb745e7
+  146  docker ps
+  147  docker stop 87ec38154418
+  148  docker images
+  149  docker run -itd docker.io/purik/android-studio
+  150  docker stop 8db3e7460721d204c97b5c71d6915e2c60cf0c4f029868350a94bd0fb74ccc2c
+  151  docker run -it --net=host --env="DISPLAY" -v /tmp/.X11-unix:/tmp/.X11-unix -v="$HOME/.Xauthority:/root/.Xauthority:rw" purik/android-studio:latest /opt/android-studio/bin/studio.sh
+  152  ip a
+  153  cd containers/
+  154  ls
+  155  cd 46136
+  156  ls
+  157  cd cpp
+  158  ls
+  159  docker images
+  160  cd
+  161  docker images
+  162  set-variable -name DISPLAY -value 172.16.9.179:0.0
+  163  ls
+  164  rm -rvf androidDocker/
+  165  ls
+  166  vim Dockerfile
+  167  sudo docker build -t android-studio .
+  168  docker ps
+  169  cd
+  170  docker stop
+  171  docker images
+  172  docker rmi fe3be8148982
+  173  docker rmi -f fe3be8148982
+  174  docker rmi -f docker.io/purik/android-studio
+  175  docker images
+  176  docker rmi -f docker.io/ubuntu
+  177  docker images
+  178  docker rmi -f 390582d83ead
+  179  echo $DISPLAY
+  180  ip a
+  181  echo $DISPLAY
+  182  echo $HOME
+  183  ls
+  184  cd /root
+  185  ls
+  186  ls -a
+  187  vi .Xauthority/
+  188  cd .Xauthority/
+  189  ls
+  190  ls -a
+  191  cd
+  192  docker images
+  193  docker rmi -f 97cd4b94f0ed
+  194  docker rmi -f 390582d83ead
+  195  docker images
+  196  cd Downloads/
+  197  youtube-dl https://youtu.be/oBfRJplcSuk
+  198  ls
+  199  cd
+  200  docker images
+  201  cd
+  202  vim Dockerfile
+  203  rm Dockerfile 
+  204  vim Dockerfile
+  205  choco install vcxsrv
+  206  vim Dockerfile 
+  207  docker build -t firefox .
+  208  docker run -ti --rm        -e DISPLAY=$DISPLAY        -v /tmp/.X11-unix:/tmp/.X11-unix        firefox
+  209  docker run -ti --rm -e DISPLAY=172.16.9.179:0.0 -v /tmp/.X11-unix:/tmp/.X11-unix firefox
+  210  docker run -e DISPLAY -v $HOME/.Xauthority:/home/developer/.Xauthority --net=host firefox
+  211  echo $DISPLAY
+  212  docker run -ti --rm -e DISPLAY=172.16.9.179:0 -v /tmp/.X11-unix:/tmp/.X11-unix firefox
+  213  docker run -ti --rm -e DISPLAY=172.16.9.179:0.0 -v /tmp/.X11-unix:/tmp/.X11-unix firefox
+  214  docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix firefox
+  215  sudo visudo
+  216  docker images
+  217  docker run -ti firefox
+  218  docker run -ti --rm -e DISPLAY=$DISPLAY firefox
+  219  docker run -ti -e DISPLAY=$DISPLAY firefox
+  220  sudo visudo
+  221  docker run -ti -e DISPLAY=$DISPLAY firefox
+  222  docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix firefox
+  223  sudo visudo
+  224  docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix firefox
+  225  sudo visudo
+  226  docker pull creack/firefox-vnc
+  227  ls
+  228  rm Dockerfile 
+  229  vim Dockerfile
+  230  docker build -t vnc-filefox .
+  231  docker run -p 5900 -e HOME=/ creack/firefox-vnc x11vnc -forever -usepw -create
+  232  docker images
+  233  docker rmi -f 534047703b7c 
+  234  docker images
+  235  docker run -d     -v /etc/localtime:/etc/localtime     -p 4713:4713 \ # expose the port
+  236      --device /dev/snd \ # sound
+  237      --name pulseaudio     jess/pulseaudio
+  238  docker run -it \ --net host \ # may as well YOLO --cpuset-cpus 0 \ # control the cpu --memory 512mb \ # max memory it can use -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket -e DISPLAY=unix$DISPLAY \ # pass the display -v $HOME/Downloads:/root/Downloads \ # optional, but nice -v HOME/.config/google-chrome/:/data \ # if you want to save state --device /dev/snd \ # so we have sound --name chrome \ jess/chrome
+  239  docker run -it     --net host \ # may as well YOLO
+  240      --cpuset-cpus 0 \ # control the cpu
+  241      --memory 512mb \ # max memory it can use
+  242      -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
+  243      -e DISPLAY=unix$DISPLAY \ # pass the display
+  244      -v $HOME/Downloads:/root/Downloads \ # optional, but nice
+  245      -v $HOME/.config/google-chrome/:/data \ # if you want to save state
+  246      --device /dev/snd \ # so we have sound
+  247      --name chrome     jess/chrome
+  248  docker run -it --net host --cpuset-cpus 0 --memory 512mb -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v $HOME/Downloads:/root/Downloads - -v HOME/.config/google-chrome/:/data --device /dev/snd --name chrome jess/chrome
+  249  docker run -it --net host --cpuset-cpus 0 --memory 512mb -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v $HOME/Downloads:/root/Downloads -v HOME/.config/google-chrome/:/data --device /dev/snd --name chrome jess/chrome
+  250  docker run -it --net host --cpuset-cpus 0 --memory 512mb -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v /root/a --device /dev/snd --name chrome jess/chrome
+  251  sudo docker run -it --net host --cpuset-cpus 0 --memory 512mb -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v /root/a --device /dev/snd --name chrome jess/chrome
+  252  sudo docker run -it --net host --cpuset-cpus 0 --memory 512mb -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v /root/a --device /dev/snd jess/chrome
+  253  docker ps
+  254  docker images
+  255  vim Dockerfile
+  256  docker build --rm -t firefox .
+  257  docker images
+  258  docker rmi mysql-container
+  259  docker rmi -f mysql-container
+  260  docker rmi -f mysql-container:latest
+  261  docker rmi -f mysqlcontainer
+  262  docker images
+  263  docker rmi -f mysql_container
+  264  docker build --rm -t firefox .
+  265  vim Dockerfile
+  266  docker build --rm -t firefox .
+  267  docker ps
+  268  docker image
+  269  docker images
+  270  docker rmi -f 4a9f35829307
+  271  docker rmi -f b5b35ea53392
+  272  docker images
+  273  docker build --rm -t firefox .
+  274  docker images
+  275  docker rmi -f 5b117edd0b76
+  276  docker images
+  277  docker rmi -f 11426a19f1a2
+  278  docker images
+  279  docker rmi -f ba22e782ecbf
+  280  docker rmi -f 912e42be7aa3
+  281  docker rmi -f ba22e782ecbf
+  282  docker rmi -f 1e1148e4cc2c
+  283  docker imagesA
+  284  docker images
+  285  docker rmi -f 9fb0e44bcd0e
+  286  rpm --import https://winswitch.org/gpg.asc
+  287  cd /etc/yum.repos.d/
+  288  curl -O https://winswitch.org/downloads/CentOS/winswitch.repo
+  289  yum install xpra
+  290  ls
+  291  cd /root/Downloads/
+  292  ls
+  293  cd docker-desktop-master/
+  294  ls
+  295  sh startup.sh 
+  296  ./startup.sh 
+  297  vi startup.sh 
+  298  ls
+  299  ll
+  300  ./startup.sh 
+  301  vi startup.sh 
+  302  cd
+  303  ip a
+  304  sudo visudo 
+  305  mkdir a
+  306  docker rmi -f 390582d83ead
+  307  docker rmi -f a3dff053ba7a
+  308  docker images
+  309  docker rmi -f 390582d83ead
+  310  docker images
+  311  id $USER
+  312  cd /etc/yum.repos.d/
+  313  ls
+  314  cd /tmp/
+  315  ls -a
+  316  xauth list
+  317  cd
+  318  xauth list
+  319  xauth 
+  320  mv .Xauthority old.Xauthority 
+  321  touch ~/.Xauthority
+  322  xauth generate :0 . trusted
+  323  env | grep DISPLAY
+  324  /usr/bin/xauth -v -f /tmp/testxauth generate :0.0 MIT-MAGIC-COOKIE-1 untrusted
+  325  xauth generate :0 . trusted
+  326  systemctl restart ssh
+  327  systemctl restart s
+  328  systemctl restart sshd
+  329  xauth generate :0 . trusted
+  330  xauth generate :11 . trusted
+  331  echo $DISPLAY
+  332  xauth generate $DISPLAY . trusted
+  333  xauth generate 
+  334  /usr/local/bin/xauth -f /tmp/xauthtest
+  335  generate :0.0 MIT-MAGIC-COOKIE-1 untrusted timeout 1200
+  336  /usr/local/bin/xauth -f /tmp/xauthtest
+  337  /usr/local/bin/xauth -f /tmp/xauthtest generate :0.0 MIT-MAGIC-COOKIE-1 untrusted timeout 1200
+  338  xauth -f /tmp/xauthtest generate :0.0 MIT-MAGIC-COOKIE-1 untrusted timeout 1200
+  339  dokap
+  340  dockap
+  341  ls
+  342  mv old.Xauthority .Xauthority 
+  343  ls
+  344  ls -a
+  345  cd Downloads/
+  346  cd dockap-master/
+  347  ;s
+  348  ls
+  349  make
+  350  make install 
+  351  dockap 
+  352  dockap -help
+  353  dockap -h
+  354  ls
+  355  cd examples/
+  356  ls
+  357  dockap -i firefox/
+  358  cd firefox/
+  359  ls
+  360  cat Dockerfile 
+  361  docker build -t app .
+  362  ls
+  363  dockap -i app
+  364  cd ..
+  365  ls
+  366  dockap -i firefox/
+  367  cd firefox/
+  368  ls
+  369  vi cmd1
+  370  history | grep build
+  371  docker ps
+  372  docker images
+  373  docker ps
+  374  docker images
+  375  /usr/local/bin/xauth -f /tmp/xauthtest generate :0.0 MIT-MAGIC-COOKIE-1 untrusted timeout 1200
+  376  docker run -ti --rm -e DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  377  xauth info
+  378  xhost +
+  379  docker run -ti --rm -e DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  380  xhost +
+  381  sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  382  xauth info
+  383  ls -a
+  384  cd /root/.Xauthority
+  385  cat /root/.Xauthority
+  386  vi /root/.Xauthority
+  387  c
+  388  ls
+  389  cd old.Xauthority/
+  390  ls
+  391  sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  392  sudo visudo 
+  393  sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  394  systemctl restart docker
+  395  sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  396  sudo docker run -ti --rm -E DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  397  env
+  398  env -E
+  399  sudo xhost +
+  400  export DISPLAY=:0.0
+  401  sudo docker run -ti --rm -E DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  402  sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  403  xhost root
+  404  export XAUTHORITY=~/.Xauthority
+  405  xauth list
+  406  sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  407  xauth generate :0 . trusted
+  408  xhost local:root
+  409  xauth generate :0 . trusted
+  410  sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v $HOME:/home/developer -v /tmp/.X11-unix:/tmp/.X11-unix app
+  411  sudo cp /home/user/.Xauthority .Xauthority
+  412  sudo cp /home/root/.Xauthority .Xauthority
+  413  sudo cp .Xauthority .Xauthority
+  414  ip a
+  415  cd
+  416  ls
+  417  ls -a
+  418  cat .Xauthority 
+  419  cat Xauthority 
+  420  mv Xauthority .Xauthority
+  421  cat Xauthority 
+  422  cat .Xauthority 
+  423  xauth info
+  424  xhost +
+  425  ls
+  426  xhost +
+  427  cd old.Xauthority/
+  428  ls -a
+  429  mysql -u root -p
+  430  docker pull fgrehm/netbeans:v8.0.1
+  431  docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v `pwd`/.netbeans-docker:/home/developer/.netbeans -v `pwd`:/workspace fgrehm/netbeans:v8.0.1
+  432  java --version
+  433  java -version
+  434  MAVEN_OPTS -Xmx512m
+  435  sudo gedit ~/.profile
+  436  ls -a
+  437  sudo gedit .bashrc 
+  438  docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v `pwd`/.netbeans-docker:/home/developer/.netbeans -v `pwd`:/workspace fgrehm/netbeans:v8.0.1
+  439  sudo gedit .bashrc 
+  440  docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v `pwd`/.netbeans-docker:/home/developer/.netbeans -v `pwd`:/workspace fgrehm/netbeans:v8.0.1
+  441  sudo gedit .bashrc 
+  442  export MAVEN_OPTS="-Xmx512m"
+  443  docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v `pwd`/.netbeans-docker:/home/developer/.netbeans -v `pwd`:/workspace fgrehm/netbeans:v8.0.1
+  444  cat .bashrc
+  445  java -version
+  446  yum install java
+  447  yum update java
+  448  yum update
+  449  yum upgrade
+  450  dnf update
+  451  dnf upgrade
+  452  ls
+  453  docker ps
+  454  docker images
+  455  docker rmi -f 390582d83ead
+  456  docker rmi -f f92d178f66e1
+  457  docker rmi -f 390582d83ead
+  458  docker images
+  459  vi a
+  460  cd containers/
+  461  ls
+  462  cd 46136/
+  463  cd cp
+  464  cd cpp/
+  465  ls
+  466  cd
+  467  ping 172.16.11.214
+  468  docker images
+  469  docker rmi -f readycontainer
+  470  ip a
+  471  mysql -u root -p
+  472  systemctl disable firewalld.service 
+  473  systemctl start firewalld.service 
+  474  systemctl enable firewalld.service 
+  475  ip a
+  476  docker images
+  477  docker export c-container > c-container.tar
+  478  docker export cpp-container > c-container.tar
+  479  history | grep tar
+  480  docker images
+  481  docker save c44fba5efb3f -o c.tar
+  482  ls
+  483  rm c-container.tar 
+  484  docker images
+  485  docker save ac14aaad589a -o cpp.tar
+  486  ls
+  487  docker save ed4bfed6d6e6 -o python.tar
+  488  docker save a978e699f2f2 -o java.tar
+  489  ls
+  490  ip a
+  491  cd /run/media/root/VAIBHAVI/
+  492  ls
+  493  cd
+  494  mysql -u root -p
+  495  systemctl stop firewalld.service 
+  496  ping 172.16.11.214
+  497  docker images
+  498  sudo visudo
+  499  history | php
+  500  history | grep php
+  501  history | grep mysql
+  502  docker images
+  503  cd /var/www/html/
+  504  cd oursite/
+  505  ls
+  506  ll
+  507  vim /etc/passwd
+  508  cd /usr/bin/docker
+  509  cd /usr/bin/Docker
+  510  history | grep /usr/bin
+  511  ll /usr/bin/docker
+  512  ls
+  513  ll
+  514  lsblk
+  515  docker ps
+  516  docker images
+  517  docker ps -a
+  518  docker images
+  519  docker rmi -f d304f4a8c56f
+  520  docker images
+  521  ls
+  522  cd /root
+  523  ls
+  524  cd a
+  525  ls
+  526  cd
+  527  cd ab
+  528  ls
+  529  cd
+  530  rm a
+  531  rm a -rvf
+  532  rm ab -rvf
+  533  cd
+  534  ls
+  535  cat cm1
+  536  cat cmd1 
+  537  cat Dockerfile 
+  538  rm Dockerfile 
+  539  cd /etc/yum.repos.d/
+  540  ls
+  541  cd
+  542  sudo visudo 
+  543  cd
+  544  docker pull thyrlian/android-sdk-vnc
+  545  docker run -d -p 5901:5901 -p 2222:22 -v $(pwd)/sdk:/opt/android-sdk thyrlian/android-sdk-vnc
+  546  docker ps
+  547  docker inspect f5cbeb0fc5ff | grep ip
+  548  docker ps
+  549  docker inspect f5cbeb0fc5ff | grep "ip"
+  550  docker inspect f5cbeb0fc5ff | grep "IP"
+  551  docker inspect f5cbeb0fc5ff 
+  552  docker images
+  553  docker ps
+  554  docker stop f5cbeb0fc5ff
+  555  docker ps
+  556  history | grep display
+  557  history | grep net
+  558  history | grep tar
+  559  history | grep net
+  560  docker ps -aq
+  561  docker rm -f $(docker ps -aq)
+  562  mysql -u root -p
+  563  systemctl restart mariadb
+  564  systemctl  status mariadb.service
+  565  systemctl start mariadb.service
+  566  systemctl status mysql
+  567  cd /var/www/html/
+  568  cd oursite/
+  569  php language.php 
+  570  php -f language.php 
+  571  ip a
+  572  cd
+  573  yum install mysql
+  574  mysql -u root -p
+  575  sudo /etc/init.d/mysqld stop
+  576  /etc/init.d/mysqld stop
+  577  cd /etc/init.d/mysql
+  578  cd /etc/init.d/mysqld
+  579  yum install mysql-server
+  580  docker images
+  581  gedit /etc/mysql/my.cnf
+  582  yum install php
+  583  mysql -u root
+  584  systemctl restart mariadb
+  585  systemctl  status mariadb.service
+  586  mysql -u root -p
+  587  mysql_secure_installation 
+  588  systemctl status mysql
+  589  systemctl status mysql.service
+  590  yum remove mysql mysql-server
+  591  rm /var/lib/mysql/
+  592  rm -rvf /var/lib/mysql/
+  593  yum install mysql mysql-server
+  594  yum remove mysql mysql-server
+  595  docker images
+  596  docker ps -a
+  597  docker ps
+  598  mysql -u root -p
+  599  yum install mysql mysql-server
+  600  yum remove mysql mysql-server
+  601  cd /etc/yum.repos.d/
+  602  ls
+  603  cat winswitch.repo 
+  604  rm winswitch.repo 
+  605  ls
+  606  history | grep mysql
+  607  history | grep mysql-community
+  608  cd
+  609  dnf install https://dev.mysql.com/get/mysql80-community-release-fc26-1.noarch.rpm
+  610  dnf install mysql-community-server
+  611  ls
+  612  yum remove mysql mysql-server
+  613  dnf remove https://dev.mysql.com/get/mysql80-community-release-fc26-1.noarch.rpm
+  614  yum install mysql-community-server
+  615  yum install mysql mysql-server
+  616  dnf remove https://dev.mysql.com/get/mysql80-community-release-fc26-1.noarch.rpm
+  617  yum remove mysql-community-server
+  618  yum remove mysql mysql-server
+  619  docker images
+  620  docker rmi f 358b2c51f891
+  621  docker rmi -f 358b2c51f891
+  622  docker images
+  623  lsblk
+  624  lvs
+  625  free -m
+  626  vim /etc/fstab 
+  627  docker pull babim/ubuntu-novnc
+  628  docker ps
+  629  docker images
+  630  mysql -u root -p
+  631  cd /etc/yum.repos.d/
+  632  ls
+  633  cat mysql-community.repo 
+  634  vim mysql-community.repo 
+  635  dnf install mysql-community-server
+  636  cd
+  637  yum remove mysql-server
+  638  yum remove mysql mysql-server
+  639  mv /var/lib/mysql /var/lib/mysql-bak
+  640  yum install mysql mysql-server
+  641  mysql_secure_installation 
+  642  service mysqld stop
+  643  service mysqld restart
+  644  sudo service mysql start
+  645  yum install mariadb mariadb-server
+  646  systemctl start mariadb.service
+  647  systemctl enable mariadb.service
+  648  /usr/bin/mysql_secure_installation
+  649  mysql -u root -p
+  650  ip a
+  651  docker pull dorowu/ubuntu-desktop-lxde-vnc
+  652  docker run -itd -p 44444:80 docker.io/dorowu/ubuntu-desktop-lxde-vnc 
+  653  history | grep commit
+  654  docker images
+  655  docker run -itd -p 44444:80 docker.io/dorowu/ubuntu-desktop-lxde-vnc 
+  656  docker ps
+  657  docker commit 2155a37a13fc r-studio
+  658  docker run -itd -p 33333:80 r-studio 
+  659  docker images
+  660  docker run -itd -p 33335:80 r-studio 
+  661  ip a
+  662  docker ps
+  663  docker stop 1f833d7b8b3c
+  664  docker stop 727e7b6817ca
+  665  docker ps
+  666  firefox localhost:46132
+  667  docker ps
+  668  docker stop 04f6447bd49b
+  669  docker ps
+  670  docker stop 2155a37a13fc
+  671  docker ps
+  672  docker run -itd -p 44444:80 docker.io/dorowu/ubuntu-desktop-lxde-vnc 
+  673  docker ps
+  674  docker commit 7795e6e4c7da eclipse
+  675  docker images
+  676  docker run -itd -p 46133:80 eclipse
+  677  ip a
+  678  docker ps
+  679  docker stop 6c9ff481ed9f
+  680  docker run -itd -p 46132:80 eclipse
+  681  docker run -itd -p 55555:80 eclipse
+  682  docker ps
+  683  docker commit 7795e6e4c7da eclipse-container
+  684  docker images
+  685  docker run -itd -p 46111:80 eclipse-container
+  686  docker ps
+  687  docker stop 236509bebfb7
+  688  docker stop c4a64583b2ec
+  689  docker stop 7795e6e4c7da
+  690  docker images
+  691  docker rmi -f eclipse
+  692  docker rmi -f eclipse-container
+  693  docker images
+  694  docker run -itd -p 46137:80 r-studio
+  695  docker stop 5b74036fce86
+  696  docker ps
+  697  history | grep docker stop
+  698  history | grep "docker stop"
+  699  docker ps -aq
+  700  docekr stop $(docker ps -aq)
+  701  docker stop $(docker ps -aq)
+  702  docker ps -aq
+  703  history | grep "docker rm"
+  704  history | grep "docker"
+  705  docker rm -f $(docker ps -aq)
+  706  docker ps -aq
+  707  docker images
+  708  ip a
+  709  docker ps
+  710  ip a
+  711  firefox 172.16.10.175:46133
+  712  firefox 172.16.10.165:46133
+  713  docker images
+  714  docker run -itd -p 46134:80 docker.io/dorowu/ubuntu-desktop-lxde-vnc
+  715  docker ps
+  716  docker commit 543a770431e1 codeblock
+  717  docker run -itd -p 46135:80 codeblock
+  718  docker ps
+  719  docker images
+  720  docker run -itd -p 46135:80 docker.io/dorowu/ubuntu-desktop-lxde-vnc
+  721  docker ps
+  722  docker commit 7ac7209a9d6a eclipse
+  723  docker run -itd -p 46132:80 eclipse
+  724  docker ps
+  725  docker stop e066edc1f099
+  726  docker stop 7ac7209a9d6a
+  727  docker ps
+  728  docker run -itd -p 46133:80 eclipse
+  729  docker ps
+  730  docker run -itd -p 46134:80 r-studio
+  731  docker ps
+  732  docker stop 83461503d818
+  733  docker run -itd -p 46136:80 eclipse
+  734  docker ps
+  735  watch docker ps
+  736  docker exec -it 629dbbe2748f bash
+  737  docker ps
+  738  docker run -itd -p 46136:80 eclipse --restart=always
+  739  docker run -itd -p 46137:80 eclipse --restart=always
+  740  docker ps
+  741  docker stop 629dbbe2748f
+  742  docker ps
+  743  docker stop e1514f4f5353
+  744  docker images
+  745  docker run -itd -p 44444:3000 docker.io/krishnasrinivas/wetty
+  746  docker exec -it 4b3204a54551092fe847dfcc65d4f1167dbe6fe238240f62c86875e844e36c4a bash
+  747  watch docker ps
+  748  docker exec -it 4b3204a54551092fe847dfcc65d4f1167dbe6fe238240f62c86875e844e36c4a bash
+  749  docker ps
+  750  docker commit 4b3204a54551 mysql
+  751  docker images
+  752  ip a
+  753  docker ps
+  754  docker exec -it 4b3204a54551092fe847dfcc65d4f1167dbe6fe238240f62c86875e844e36c4a bash
+  755  docker ps
+  756  docker commit 4b3204a54551 mysql
+  757  docker images
+  758  docker rmi -f mysql
+  759  docker tag 275eff8e1191 mysql
+  760  docker images
+  761  docker run -itd -p 44444:3000 eclipse
+  762  docker ps
+  763  docker stop 177285da56db
+  764  docker run -itd -p 44444:80 eclipse
+  765  docker ps
+  766  docker run -itd -p 44435:80 docker.io/dorowu/ubuntu-desktop-lxde-vnc
+  767  docker images
+  768  docker ps
+  769  docker exec -it 7afd9d93f93d bash
+  770  docker commit 7afd9d93f93d mysql
+  771  docker images
+  772  docker ps 
+  773  ip a
+  774  docker images
+  775  docker ps
+  776  docker images
+  777  docker run -itd -p 44444:80 codeblock
+  778  docker ps
+  779  docker run -itd -p 55555:80 eclipse
+  780  docker ps
+  781  watch docker ps
+  782  docker images
+  783  docker run -itd -p 55556:80 docker.io/dorowu/ubuntu-desktop-lxde-vnc
+  784  docker ps
+  785  docker exec -it ee5ca00db014 bash
+  786  inspect ee5ca00db014
+  787  docker inspect ee5ca00db014
+  788  docker ps
+  789  docker images
+  790  docker commit b993811960c8 java-gui
+  791  docker run -itd -p 55557:80 java-gui
+  792  docker os
+  793  docker ps
+  794  watch docker ps
+  795  ip a
+  796  docker images
+  797  history | grep tar
+  798  docker save cd3dc2c9e927 -o eclipse.tar
+  799  ls
+  800  docker rmi -f eclipse
+  801  docker images
+  802  docker ps
+  803   docker ps
+  804  docker images
+  805  docker run -itd -p 55555:80 java-gui
+  806  docker images
+  807  docker run -itd -p 33333:80 docker.io/dorowu/ubuntu-desktop-lxde-vnc
+  808  docker images
+  809  docker ps
+  810  docker images
+  811  docker ps
+  812  watch docker ps
+  813  ip a
+  814  docker ps
+  815  docker exec -it f496c29e9c74 bash
+  816  docker ps
+  817  cd containers/
+  818  ls
+  819  rm -rvf 4613*
+  820  ls
+  821  docker ps
+  822  watch docker ps
+  823  ls
+  824  cd 46133/
+  825  ls
+  826  cd cpp/
+  827  ls
+  828  cd
+  829  watch docker ps
+  830  cd containers/
+  831  ls
+  832  cd 46133/
+  833  ls
+  834  cd C
+  835  ls
+  836  cd ..
+  837  ls
+  838  cd java/
+  839  ls
+  840  cd
+  841  cd containers/
+  842  ls
+  843  cd 46133/
+  844  ls
+  845  cd python/
+  846  ls
+  847  cd ..
+  848  ls
+  849  cd rstudio/
+  850  ls
+  851  docker ps
+  852  cd ..
+  853  ls
+  854  docker images
+  855  history | grep load
+  856  history | grep docker
+  857  cd Downloads/
+  858  docker export scilab > Scilab.tar
+  859  docker load Scilab.tar
+  860  docker load < Scilab.tar
+  861  docker image load Scilab.tar
+  862  docker load < Scilab.tar
+  863  ls
+  864  docker load < Scilab.tar
+  865  cd ..
+  866  cd /home/
+  867  ls
+  868  docker load < Scilab.tar
+  869  cd
+  870  docker load < Scilab.tar
+  871  docker images
+  872  docker tag b596b4430b2e scilab
+  873  docker images
+  874  docker run -itd -p 34534:80 docker.io/dorowu/ubuntu-desktop-lxde-vnc
+  875  docker ps
+  876  docker commit b35c37e9c68c c-gui
+  877  docker commit b35c37e9c68c cpp-gui
+  878  docker run -itd -p 44444:80 c-gui
+  879  docker ps
+  880  cd containers/
+  881  ls
+  882  cd 46133
+  883  ls
+  884  cd java
+  885  ls
+  886  cd
+  887  docker ps
+  888  docker stop b35c37e9c68c
+  889  docker run -itd -p 45555:80 docker.io/dorowu/ubuntu-desktop-lxde-vnc
+  890  docker ps
+  891  docker commit 8a08e897f32c python-gui
+  892  docker images
+  893  docker ps
+  894  docker ps | grep STATUS
+  895  docker ps
+  896  docker ps | cut -c 20-30
+  897  docker ps | cut -c 100-120
+  898  docker ps | cut -f 5
+  899  docker ps | cut -F 5
+  900  docker ps | cut -d " " -f 5
+  901  docker ps | cut -d "\t" -f 5
+  902  docker ps | cut -d " " -f 5
+  903  docker ps | cut -d " " -f 4
+  904  docker ps | cut -d " " -f 1
+  905  help docker 
+  906  docker ps --help
+  907  docker ps -f --help
+  908  docker ps -f STATUS
+  909  docker ps -f "STATUS"
+  910  docker ps --format '{{.STATUS}}'
+  911  docker ps --format '{{.status}}'
+  912  docker images
+  913  docker ps
+  914  docker ps --format '{{.Status}}'
+  915  docker ps
+  916  docker ps --format '{{.Status}}' | grep ^healthy$
+  917  docker ps --format '{{.Status}}' | grep ^healthy
+  918  docker ps --format '{{.Status}}' | grep healthy$
+  919  docker ps --format '{{.Status}}' | grep (healthy)$
+  920  docker ps --format '{{.Status}}' | grep "(healthy)"$
+  921  docker ps --format '{{.Status}}' | grep "(healthy)"$
+  922  docker ps --format '{{.Status}{.Id}}'
+  923  docker ps --format '{{.Status},{.Id}}'
+  924  docker ps --format '{{.Status}}' {{.T
+  925  docker ps --format '{{.Status}}' {{.Id}}'
+  926  docker ps --help
+  927  docker ps -l
+  928  docker ps | grep 46133
+  929  docker ps --format '{{.Status}}' | grep 46133
+  930  docker ps --format '{{.Status}}'
+  931  docker ps --format '{{.Status}}' | grep 46133
+  932  docker ps | docker ps --format '{{.Status}}'
+  933  docker ps | grep 46133 | docker ps --format '{{.Status}}'
+  934  docker ps | grep 46133
+  935  docker ps | grep 46133 | grep "healthy"
+  936  docker ps | grep 46133 | grep "health"
+  937  docker ps | grep 46133 | grep "health:starting"
+  938  docker ps | grep 46133 | grep "health: starting"
+  939  docker ps | grep 46133 | grep "healthy"
+  940  docker ps | grep 46133 | grep "health: starting\|healthy"
+  941  docker ps | grep 46133 | grep "health: starting\|unhealthy"
+  942  systemctl restart httpd
+  943  systemctl enable httpd
+  944  docker ps | grep 46133 | grep "health: starting\|healthy"
+  945  watch docker ps
+  946  docker ps
+  947  docker stop 4963ec8f0016
+  948  docker ps
+  949  docker images
+  950  docker ps
+  951  docker stop 8a08e897f32c
+  952  docker stop 91cb5afc3e92
+  953  docker ps
+  954  watch docker ps
+  955  docker ps
+  956  docker commit c4dbe8c360c3 cppgui
+  957  docker images
+  958  docker ps
+  959  watch docker ps
+  960  docker ps
+  961  mysql -u root -p
+  962  ip a
+  963  docker ps
+  964  ip a
+  965  cd containers/
+  966  ls
+  967  cd 46133
+  968  ls
+  969  rm rstudio/
+  970  rm -rvf rstudio/
+  971  ls
+  972  mysql -u root -p
+  973  cd containers/
+  974  ls
+  975  cd 46133
+  976  ls
+  977  cd C
+  978  ls
+  979  cd ..
+  980  cd cpp
+  981  ls
+  982  cd ..
+  983  ls
+  984  rm -rvf C
+  985  rm -rvf java/
+  986  rm -rvf rstudio/
+  987  ls
+  988  rm -rvf python/
+  989  ls
+  990  cd ..
+  991  ls
+  992  rm -rvf 46137
+  993  ls
+  994  cd 46133
+  995  ls
+  996  cd rstudio/
+  997  ls
+  998  cd
+  999  history
+ 1000  history | grep "docker save"
+ 1001  history > history.txt
