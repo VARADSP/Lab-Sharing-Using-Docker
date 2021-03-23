@@ -5,9 +5,19 @@
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
-# Talent School App Android Project
+#  Lab Sharing Using Docker
 
-> Designed with Firebase Database, This android app is designed for Talent Pre-Kids School. It was a representative app for the school.The school manager uploads videos and events of school to the app,App sends notifications to all users using FCM.
+> Worked as an equal member of a four person team to develop webapp for sharing
+docker containers over the network in lab infrastructure.
+
+> This project provides students the GUI based containers having different tools
+such as rstudio, eclipse, scilab, java, etc for lab practices.
+
+> Webapp manages user space with session management and users data is saved
+using volume sharing. MySQL database is used to manage container requests and
+serve them. Port forwarding is used to map containers to client browsers on
+request of client.
+
 
 
 
