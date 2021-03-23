@@ -50,12 +50,12 @@ request of client.
 
 ## Installation
 
-- Android Studio Needed To Run The App
+- Linux environment with docker,ansible installed along with apache php server.
 
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/VARADSP/AndroidProjectTalentSchool`
+- Clone this repo to your local machine using `https://github.com/VARADSP/Lab-Sharing-Using-Docker/`
 
 ### Setup
 
@@ -63,8 +63,9 @@ request of client.
 > update and install this package first
 
 ```shell
-$ install Android Studio
-$ Import the project throught the studio
+$ install docker refer https://docs.docker.com/engine/install/
+$ install apache php server on linux to host this web app refer https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-centos-7
+$ install mysql on linux and do the initial setup
 ```
 
 
