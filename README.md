@@ -1,11 +1,5 @@
-<a href="#"><img src="androidimg.jpg" title="StackOfProjects" alt="StackOfProjects"></a>
-<a href="#"><img src="PlayStoreApp.png" height="500" title="LiveOnPlayStore" alt="StackOfProjects"></a>
-<a href="#"><img src="scr1.png" title="Scr1" height="500" alt="StackOfProjects"></a>
-<a href="#"><img src="scr2.png" title="Scr2" height="500" alt="StackOfProjects"></a>
-<a href="#"><img src="scr3.png" title="Scr3" height="500" alt="StackOfProjects"></a>
-<a href="#"><img src="scr4.png" title="Scr4" height="500" alt="StackOfProjects"></a>
-<a href="#"><img src="scr5.png" title="Scr5" height="500" alt="StackOfProjects"></a>
-<a href="#"><img src="splashScreen.png" height="500" title="SplashScreen" alt="StackOfProjects"></a>
+<a href="#"><img src="dockermysql.jpg" title="DockerMysql" alt="StackOfProjects"></a>
+
 
 
 
