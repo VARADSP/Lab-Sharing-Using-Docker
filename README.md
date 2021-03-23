@@ -65,7 +65,8 @@ request of client.
 ```shell
 $ install docker refer https://docs.docker.com/engine/install/
 $ install apache php server on linux to host this web app refer https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-centos-7
-$ install mysql on linux and do the initial setup
+$ install mysql on linux and do the initial setup refer https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7
+$ import mysql database and run the project with docker engine turned on !
 ```
 
 
@@ -74,16 +75,16 @@ $ install mysql on linux and do the initial setup
 ---
 
 ## Features
-A user can view the school activities and get all notifications of current events happening in the school.
+Students can register in webapp portal and request the containers as per their requirements in lab infrastructure to execute their practicals.
 
 
 ## Usage
-Admin access has been given to a user
+Admin access is given to admin user who can see,delete,edit users and manage containers,server capacity.
 ## Documentation
 Reports are included, see the Project Report to know more!
 ## Tests
 
-- Used Android technology and the code is written in java language
+- Used PHP for webapp backend , mysql as database , HTML,CSS,Bootstrap for template designing
 - I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
 
 ---
@@ -100,15 +101,15 @@ Reports are included, see the Project Report to know more!
     - 🍴 Fork this repo!
 
 - **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/VARADSP/AndroidProjectTalentSchool`
+    - 👯 Clone this repo to your local machine using `https://github.com/VARADSP/Lab-Sharing-Using-Docker/`
 
 ### Step 2
 
-- Import in Android Studio ---- **HACK AWAY!** 🔨🔨🔨
+- Run on Linux CentOS,Ubuntu ---- **HACK AWAY!** 🔨🔨🔨
 
 ### Step 3
 
-- 🔃 Create a new pull request using <a href="https://github.com/VARADSP/StackOfProjects-ASP.NET-Website-Project/compare/" target="_blank">`https://github.com/VARADSP/AndroidProjectTalentSchool/compare/`</a>.
+- 🔃 Create a new pull request using <a href="https://github.com/VARADSP/Lab-Sharing-Using-Docker/compare/" target="_blank">`https://github.com/VARADSP/Lab-Sharing-Using-Docker/compare/`</a>.
 
 ---
 
